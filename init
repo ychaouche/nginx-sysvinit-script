@@ -59,7 +59,7 @@ DAEMON_ARGS=
 readonly PRINT=/usr/bin/printf
 
 # The path in which to search for the daemon.
-readonly PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+readonly PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/nginx/sbin/
 
 # Absolute path to the PID file.
 PIDFILE=$(printf -- '%s/run/%s.pid' "$([ -d /run ] || printf -- /var)" "${NAME}")
